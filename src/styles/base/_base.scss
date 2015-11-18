@@ -1,0 +1,76 @@
+//Imports
+@import "vars"; // Variables, colors, sizes, etc.
+@import "buttons"; // Pushable things.
+@import "forms"; // Fillable things.
+@import "lists"; // Deathnote
+@import "typography"; // Good typography is good theme, most of the times.
+@import "tables"; // Old but work some occasions.
+
+
+/*
+This file includes styles that should look same anywhere on the theme
+*/
+::selection {
+  background: $elephant;
+  color: white;
+}
+html {
+  font-size: 12px;
+  font-family: $base-font;
+  & h1,& h2,& h3,& h4,& h5,& h6 {
+  font-weight: normal;
+  font-family: $secondary-font;
+  padding: 0;
+  margin: 0;
+  }
+}
+h1 {
+  font-size: 2.75rem;
+}
+h2 {
+  font-size: 2.5rem;
+  border-bottom: 5px solid;
+}
+h3 {
+  font-size: 2.25rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.75rem;
+}
+h6 {
+  font-size: 1.50rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: $link-color;
+ &:hover {
+
+ }
+}
+
+button,input,textarea {
+  border:2px solid $elephant;
+  outline:0;
+  background: transparent;
+  padding: 5px 10px;
+
+  &:hover {
+  background: rgba(201,205,209,0.1)
+  }
+}
+
+button {
+  font-family: $secondary-font;
+}
+
+ul,ol {
+  margin: 0;
+  &>li {
+    line-height: 1.75rem;
+  }
+}
