@@ -1,12 +1,14 @@
 {
-  "name": "Leean Web",
-  "description": "Leean web page.",
-  "main": "bower.json",
+  "name": "Leean Landing",
+  "description": "Landing page of Leean Wordpress theme.",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
   "authors": [
     "Moxie"
   ],
-  "license": "ISC",
-  "moduleType": [],
+  "license": "GPL",
   "homepage": "http://getmoxied.net",
   "ignore": [
     "**/.*",
@@ -16,8 +18,11 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "~4.2.6",
+    "jquery": "~2.1.4",
+    "bxslider-4": "~4.2.5",
     "neat": "~1.7.2",
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "bourbon": "~4.2.6",
+    "typicons.font": "typicons#~2.0.7"
   }
 }
