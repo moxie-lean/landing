@@ -274,6 +274,52 @@ This file includes certain sections of the page like header, footer, sidebar.
   }
 }
 
+.showcase {
+  @include outer-container(100%);
+  display: flex;
+  padding: 25px 0;
+  &__container {
+    @include outer-container(1060px);
+    display: flex;
+    flex-direction: column;
+  }
+  & h2 {
+    margin: auto;
+    text-transform: uppercase;
+  }
+  & p {
+    text-align: center;
+    margin: 25px 0;
+    opacity: 0.5;
+  }
+  &__sites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  text-align: center;
+  }
+  &__sites li {
+  text-align: center;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 530px;
+  opacity: 0.65;
+  transition: 0.6s;
+  }
+  &__sites img {
+    box-shadow: $low-white 0 0 10px 10px;
+    transition: 0.5s;
+  }
+  &__sites li:hover {
+    opacity: 1;
+  }
+  &__sites h3 {
+  font-size: 1.35rem;
+  color: $smokegrey;
+  }
+}
 
 .footer {
   display: flex;
