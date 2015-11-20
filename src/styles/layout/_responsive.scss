@@ -65,3 +65,16 @@
       }
     }
 }
+
+@media (max-width:1077px) {
+  .showcase {
+    &__sites li {
+      width: 100%;
+      text-align: center;
+      padding: 25px;
+    }
+    &__sites img {
+      max-width: 100%;
+    }
+  }
+}

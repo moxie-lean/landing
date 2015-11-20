@@ -181,21 +181,39 @@
       </ul>
     </div>
   </div>
+  <div class="showcase">
+    <div class="showcase__container">
+      <h2>Showcase</h2>
+      <p>These are humble sites that uses Leean.</p>
+      <ul class="showcase__sites">
+        <li><a href="#!"><img src="src/images/burgerfi-showcase.png" alt="" /></a><h3>BURGERFI</h3></li>
+        <li><a href="#!"><img src="src/images/mjf-showcase.png" alt="" /></a><h3>Montauk Juice Factory</h3></li>
+        <li><a href="#!"><img src="src/images/beekman-showcase.png" alt="" /></a><h3>Beekman</h3></li>
+        <li><a href="#!"><img src="src/images/modernspacesnyc-showcase.png" alt="" /></a><h3>Modernspaces NYC</h3></li>
+        <li><a href="#!"><img src="src/images/caleres-showcase.png" alt="" /></a><h3>Caleres</h3></li>
+        <li><a href="#!"><img src="src/images/bbdakota-showcase.png" alt="" /></a><h3>BB Dakota</h3></li>
+      </ul>
+    </div>
+  </div>
   <div class="footer">
     <div class="footer__copyright">
-      MIT License
+      Leean is under <a rel="nofollow" href="https://www.gnu.org/licenses/gpl-2.0.txt">GPL</a> license.
     </div>
     <div class="footer__brand--moxie">
       <img src="src/images/moxie-footer.png" alt="" class="footer_brand__media">
     </div>
   </div>
-  <script src="assets/js/production.js"></script>
+
+
+  <script src="dist/js/production.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.bxslider').bxSlider({
         pager: false,
         border: false,
-        controls: false
+        controls: false,
+        speed: 1000,
+        auto: true
       });
     });
   </script>
